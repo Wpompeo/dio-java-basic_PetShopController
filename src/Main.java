@@ -9,8 +9,8 @@ public class Main{
 
         do { 
             System.out.println("=====================================");
-            System.out.println("Bem-vindo à máquina de banho de pets!");
-            System.out.println("===Esolha uma das opções abaixo===");
+            System.out.println("Bem-vindo à máquina de banho de pets!\n");
+            System.out.println("===Esolha uma das opções abaixo===\n");
             System.out.println("1 - Dar banho no pet");
             System.out.println("2 - Abastecer a máquina com água");
             System.out.println("3 - Abastecer a máquina com shampoo");
@@ -23,7 +23,7 @@ public class Main{
             System.out.println("0 - Sair");
             System.out.println("=====================================");
             option = sc.nextInt();
-            sc.close();
+           
 
             switch (option){
                 case 0 -> System.exit(0);
@@ -66,7 +66,7 @@ public class Main{
         var name = "";
         while (name == null || name.isEmpty()) {
             System.out.println("Informe o nome do pet o nome do não pode ficar em branco:");
-            name = sc.next();         
+            name = sc.nextLine();         
           
         }        
         var pet = new Pet(name); 
